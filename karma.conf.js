@@ -57,12 +57,13 @@ module.exports = function(config) {
             test: /\.js$/,
             include: [{
               // exclude node_modules by default
-              exclude: /(node_modules)/
-            }/*, {
+              exclude: /node_modules/,
               // include jsonld and rdf-canonize
               include: /(node_modules\/jsonld)/,
+              include: /(node_modules\/jsonld-signatures)/,
               include: /(node_modules\/rdf-canonize)/
-            }*/],
+            }
+            ],
             use: {
               loader: 'babel-loader',
               options: {

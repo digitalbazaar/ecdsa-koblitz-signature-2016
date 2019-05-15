@@ -7,7 +7,6 @@
 module.exports = async function({assert, constants, jsigs, mock, Suite}) {
 
 const {
-  AssertionProofPurpose, AuthenticationProofPurpose,
   PublicKeyProofPurpose} = jsigs.purposes;
 const {NoOpProofPurpose} = mock;
 
