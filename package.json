@@ -1,0 +1,53 @@
+{
+  "name": "ecdsa-koblitz-signature-2016",
+  "version": "0.0.1",
+  "description": "Implementation of the ecdsa-koblitz-signature-suite for jsonld-signatures.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test-node",
+    "test-node": "cross-env NODE_ENV=test mocha --delay -t 30000 -A -R ${REPORTER:-spec} tests/test.js",
+    "test-karma": "karma start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitalbazaar/ecdsa-koblitz-signature-2016.git"
+  },
+  "keywords": [
+    "ecdsa-koblitz-2016",
+    "Linked Data",
+    "JSON-LD",
+    "digital signatures",
+    "jsonld-signatures",
+    "jsonld"
+  ],
+  "author": "digital_bazaar",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/digitalbazaar/ecdsa-koblitz-signature-2016/issues"
+  },
+  "homepage": "https://github.com/digitalbazaar/ecdsa-koblitz-signature-2016#readme",
+  "dependencies": {
+    "bitcore-message": "github:CoMakery/bitcore-message#dist",
+    "jsonld-signatures": "^4.1.2",
+    "node-forge": "^0.8.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.16.0",
+    "eslint-config-digitalbazaar": "^2.0.0",
+    "eslint-plugin-jsdoc": "^5.0.2",
+    "karma": "^4.1.0",
+    "karma-webpack": "^3.0.5",
+    "mocha": "^6.1.4",
+    "semver": "^6.0.0",
+    "webpack": "^4.31.0"
+  },
+  "browser": {
+    "crypto": false,
+    "bs58": false,
+    "base64url": false
+  }
+}
