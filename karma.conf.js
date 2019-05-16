@@ -47,7 +47,6 @@ module.exports = function(config) {
       //'tests/*.js': ['webpack', 'babel'] //preprocessors
       'tests/*.js': preprocessors
     },
-
     webpack: {
       mode: 'development',
       devtool: 'inline-source-map',
@@ -58,6 +57,7 @@ module.exports = function(config) {
             include: [{
               // exclude node_modules by default
               exclude: /node_modules/,
+              exclude: /dist/,
               include: /(node_modules\/jsonld-signatures)/,
             }
             ],

@@ -45,6 +45,9 @@ const outputs = [
   //}
 ];
 
+const include = new RegExp('node_modules\/jsonld-signatures\/lib' +
+  + '\/suites\/LinkedDataSignature2015');
+
 outputs.forEach(info => {
   // common to bundle and minified
   const common = {
@@ -58,7 +61,8 @@ outputs.forEach(info => {
           test: /\.js$/,
           include: [{
             // exclude node_modules by default
-            exclude: /(node_modules)/
+            exclude: /(node_modules)/,
+            include
           }/*, {
             // include jsonld
             //include: /(node_modules\/jsonld)/
@@ -93,6 +97,18 @@ outputs.forEach(info => {
         commonjs: 'bitcore-message',
         commonjs2: 'bitcore-message',
         root: 'bitcoreMessage'
+      },
+      jsonld: {
+        amd: 'jsonld',
+        commonjs: 'jsonld',
+        commonjs2: 'jsonld',
+        root: 'jsonld'
+      },
+      'jsonld-signatures': {
+        amd: 'jsonld-signatures',
+        commonjs: 'jsonld-signatures',
+        commonjs2: 'jsonld-signatures',
+        root: 'jsonld-signatures'
       },
       'node-forge': {
         amd: 'node-forge',

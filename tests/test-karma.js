@@ -34,7 +34,7 @@ const common = require('./test-common');
 const constants = require('jsonld-signatures/lib/constants');
 const jsigs = require('jsonld-signatures');
 const mock = require('./mock/mock');
-const Suite = require('../lib');
+const Suite = require('../dist/ecdsa-koblitz-signature-2016');
 const util = require('jsonld-signatures/lib/util');
 
 const options = {
