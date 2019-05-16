@@ -4,6 +4,8 @@
   "description": "Implementation of the ecdsa-koblitz-signature-suite for jsonld-signatures.",
   "main": "index.js",
   "scripts": {
+    "build": "npm run build-webpack",
+    "build-webpack": "webpack",
     "test": "npm run test-node",
     "test-node": "cross-env NODE_ENV=test mocha --delay -t 30000 -A -R ${REPORTER:-spec} tests/test.js",
     "test-karma": "karma start"
@@ -40,6 +42,7 @@
     "@babel/register": "^7.4.4",
     "@babel/runtime": "^7.4.4",
     "babel-loader": "^8.0.6",
+    "browserify": "^16.2.3",
     "chai": "^4.2.0",
     "core-js": "^2.6.4",
     "cross-env": "^5.2.0",
@@ -48,6 +51,7 @@
     "eslint-plugin-jsdoc": "^5.0.2",
     "karma": "^4.1.0",
     "karma-babel-preprocessor": "^8.0.0",
+    "karma-browserify": "^6.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "karma-edge-launcher": "^0.4.2",
     "karma-firefox-launcher": "^1.1.0",
@@ -58,7 +62,9 @@
     "karma-webpack": "^3.0.5",
     "mocha": "^6.1.4",
     "semver": "^6.0.0",
-    "webpack": "^4.31.0"
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-merge": "^4.2.1"
   },
   "browser": {
     "crypto": false,
