@@ -2,7 +2,7 @@
   "name": "ecdsa-koblitz-signature-2016",
   "version": "0.0.1",
   "description": "Implementation of the ecdsa-koblitz-signature-suite for jsonld-signatures.",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
     "build": "npm run build-webpack",
     "build-webpack": "webpack",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/digitalbazaar/ecdsa-koblitz-signature-2016.git"
+    "url": "https://github.com/digitalbazaar/ecdsa-koblitz-signature-2016.git"
   },
   "keywords": [
     "ecdsa-koblitz-2016",
@@ -22,7 +22,11 @@
     "jsonld-signatures",
     "jsonld"
   ],
-  "author": "digital_bazaar",
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "https://digitalbazaar.com/"
+  },
   "license": "BSD-3-Clause",
   "bugs": {
     "url": "https://github.com/digitalbazaar/ecdsa-koblitz-signature-2016/issues"
