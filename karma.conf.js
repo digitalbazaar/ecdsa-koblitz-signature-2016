@@ -1,4 +1,4 @@
-/**
+/*
  * Karam configuration for jsonld-signatures.
  *
  * Copyright (c) 2011-2018 Digital Bazaar, Inc. All rights reserved.
