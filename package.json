@@ -35,6 +35,7 @@
   "homepage": "https://github.com/digitalbazaar/ecdsa-koblitz-signature-2016#readme",
   "dependencies": {
     "bitcore-message": "github:CoMakery/bitcore-message#dist",
+    "esmify": "^2.1.1",
     "jsonld-signatures": "^4.5.1",
     "node-forge": "^0.9.1"
   },

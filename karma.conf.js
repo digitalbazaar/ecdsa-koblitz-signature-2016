@@ -94,8 +94,10 @@ module.exports = function(config) {
     },
 
     browserify: {
-      debug: true
-      //transform: ['uglifyify']
+      debug: true,
+      plugin: [
+        [require('esmify')]
+      ]
     },
 
     // test results reporter to use
