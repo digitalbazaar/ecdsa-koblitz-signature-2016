@@ -1,5 +1,5 @@
 /**
- * ecdsa-koblitz-signature-2016 webpack build rules.
+ * Webpack build rules for ecdsa-koblitz-signature-2016.
  *
  * @author Digital Bazaar, Inc.
  *

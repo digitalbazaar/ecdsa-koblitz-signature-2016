@@ -1,4 +1,4 @@
-/**
+/*
  * Karma test runner for jsonld-signatures.
  *
  * Use environment vars to control, set via karma.conf.js/webpack:
