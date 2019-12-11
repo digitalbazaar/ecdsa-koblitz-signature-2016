@@ -57,10 +57,9 @@ module.exports = function(config) {
             include: [{
               // exclude node_modules by default
               exclude: /node_modules/,
-              exclude: /dist/,
+              //exclude: /dist/,
               include: /(node_modules\/jsonld-signatures)/,
-            }
-            ],
+            }],
             use: {
               loader: 'babel-loader',
               options: {
